@@ -1,7 +1,7 @@
 class PigLatinizer
 
-  def piglatinize(user_phrase)
-    @user_phrase = user_phrase
+  def piglatinize(phrase)
+    @phrase = phrase
     string = @phrase
     words = string.split(" ")
     said_phrase = words.collect  {|word| piglatinize_the_word(word)}
