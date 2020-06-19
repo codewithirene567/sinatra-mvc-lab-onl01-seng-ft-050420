@@ -1,8 +1,12 @@
 class PigLatinizer
 
-  def piglatinize(word)
-    @word = word
-    string = @word
+  def piglatinize(phrase)
+    @phrase = phrase
+    string = @phrase
+    words = string.split(" ")
+    phrase = words.collect do |word|
+    piglatinize_word(word)
+    phrase.join(" ")
 
   end
 end
