@@ -1,7 +1,8 @@
 class PigLatinizer
-  attr_reader :word
 
   def piglatinize(word)
+    @word = word
+    string = @word
     
   end
 end
