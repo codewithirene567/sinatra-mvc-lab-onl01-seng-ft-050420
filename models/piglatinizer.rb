@@ -7,7 +7,7 @@ class PigLatinizer
     phrase = words.collect  {|word| piglatinize_word(word)}
     phrase.join(" ")
   end
-end
+
 
   def piglatinize_the_word(word)
     first_letter = word[0].downcase
