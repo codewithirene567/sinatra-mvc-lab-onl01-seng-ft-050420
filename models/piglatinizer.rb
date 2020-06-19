@@ -7,6 +7,5 @@ class PigLatinizer
     phrase = words.collect do |word|
     piglatinize_word(word)
     phrase.join(" ")
-
   end
 end
