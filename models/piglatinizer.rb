@@ -4,8 +4,8 @@ class PigLatinizer
     @phrase = phrase
     string = @phrase
     words = string.split(" ")
-    phrase = words.collect  {|word| piglatinize_the_word(word)}
-    phrase.join(" ")
+    said_phrase = words.collect  {|word| piglatinize_the_word(word)}
+    said_phrase.join(" ")
   end
 
 
